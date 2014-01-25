@@ -4,7 +4,8 @@ using System.Collections;
 public class DynamicLine : MonoBehaviour {
     public GameObject shape;
     public GameObject origin;
-    public float[] segs = { 1 };
+    public float minSegs;
+    public float maxWaitTime;
 	public bool isParent;
 
 	private float currentTime;
@@ -14,7 +15,7 @@ public class DynamicLine : MonoBehaviour {
     void Start()
     {
         i = 0;
-		currentWait = segs[0];
+		currentWait = minSegs;
 	}
 	
 	void Update()
@@ -23,11 +24,10 @@ public class DynamicLine : MonoBehaviour {
 		{
 			currentTime -= currentWait;
 			
-            i = ++i % segs.Length;
-			currentWait = segs[i];
+            float maxSegs = Mathf.Max(minSegs*1.5f, maxWaitTime-(i*minSegs));
+			currentWait = Random.Range(minSegs, maxSegs);
 			
-			if(i > 0)
-            	createNote();
+            createNote();
 		}
 	}
 	
