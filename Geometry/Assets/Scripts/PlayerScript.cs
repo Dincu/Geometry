@@ -6,7 +6,7 @@ using System.Collections;
 public class PlayerScript : MonoBehaviour
 {
     public float step = 30;
-    public playerPosition currentStance = playerPosition.CENTER;
+	public playerPosition currentStance = playerPosition.CENTER;
     public float damping;
     private Vector3 originPosition;
     private Vector3 targetPosition;
@@ -14,26 +14,30 @@ public class PlayerScript : MonoBehaviour
     public void Start()
     {
         originPosition = transform.position;
+		targetPosition = originPosition;
     }
 
     public enum playerPosition
     {
-        LEFT = -20,
+		LEFT = -10,
         CENTER = 0,
-        RIGTH = 20
+        RIGHT = 10
     }
 	
 	void Update()
 	{
 		if(Input.GetKeyDown(KeyCode.A))
 		{
-            if (currentStance == playerPosition.RIGTH)
+			Debug.Log("button A");
+			if (currentStance == playerPosition.RIGHT)
             {
+				Debug.Log("left to center");
                 currentStance = playerPosition.CENTER;
                 targetPosition = originPosition;
             }
             else if (currentStance == playerPosition.CENTER)
             {
+				Debug.Log("center to right");
                 currentStance = playerPosition.LEFT;
                 targetPosition = originPosition + new Vector3((float)playerPosition.LEFT, 0);
             }
@@ -41,10 +45,23 @@ public class PlayerScript : MonoBehaviour
 
 		if(Input.GetKeyDown(KeyCode.D))
 		{
+			Debug.Log("button B");
+			if (currentStance == playerPosition.LEFT) 
+			{
+				currentStance = playerPosition.CENTER;
+				targetPosition = originPosition;
+			}
+			else if (currentStance == playerPosition.CENTER) 
+			{
+				currentStance = playerPosition.RIGHT;
+				targetPosition = originPosition + new Vector3((float)playerPosition.RIGHT, 0);
+			}
 
 		}
 
-        transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * damping);
+		Debug.Log("movement");
+        Vector3 tempPosition = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * damping);
+		transform.position = new Vector3(tempPosition.x, originPosition.y, originPosition.z);
 	}
 	
 	void FixedUpdate()
