@@ -2608,7 +2608,6 @@ GameObject:
   - 212: {fileID: 606722120}
   - 50: {fileID: 606722122}
   - 114: {fileID: 606722123}
-  - 111: {fileID: 606722124}
   m_Layer: 0
   m_Name: Triangle_character
   m_TagString: Untagged
@@ -2678,22 +2677,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e4c962bc055c3842866811a72052682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!111 &606722124
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 606722119}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: c50e84acd6b93794ca3ccc1c1a713c4c, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: c50e84acd6b93794ca3ccc1c1a713c4c, type: 2}
-  - {fileID: 7400000, guid: a604c6ba1e2c086429c77adbe3dff11d, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 1
+  step: 30
+  currentStance: 0
+  damping: 1
 --- !u!1 &645697565
 GameObject:
   m_ObjectHideFlags: 0
