@@ -42,6 +42,11 @@ public class RailController : MonoBehaviour {
     {
         GameObject clone = Instantiate(shapes[Random.Range(0, shapes.Length)]) as GameObject;
 
+		clone.animation.Play("Falling"); 
+		clone.animation["SphereRight"].layer = 1; 
+		clone.animation.Play("SphereRight"); 
+		clone.animation["SphereRight"].weight = 0.4f;
+
         if (hasParent)
         {
             clone.transform.parent = origin;
