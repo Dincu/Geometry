@@ -409,6 +409,10 @@ Prefab:
       propertyPath: minSegs
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e9985ac171020274db3c2dd0fa157a53, type: 2}
+      propertyPath: shapes.Array.data[0]
+      value: 
+      objectReference: {fileID: 100000, guid: 79d5096bca9443745be3f31be5078ca0, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9985ac171020274db3c2dd0fa157a53, type: 2}
   m_RootGameObject: {fileID: 678642937}
@@ -533,7 +537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shapes:
-  - {fileID: 100000, guid: 926bc5a0519c4ae43b50bfab97af60ee, type: 2}
+  - {fileID: 100000, guid: 79d5096bca9443745be3f31be5078ca0, type: 2}
   origins:
   - {fileID: 2080804065}
   - {fileID: 340213263}
