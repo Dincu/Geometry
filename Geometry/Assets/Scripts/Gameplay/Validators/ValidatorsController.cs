@@ -15,12 +15,13 @@ public class ValidatorsController : MonoBehaviour {
     }
 
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            SideColorFigureValidator[] validators = GetComponentsInChildren<SideColorFigureValidator>();
+       
+	}
 
-            for (int i = 0; i < validators.Length; i++)
-                validators[i].SwapShape();
-        }
+	public void swapFigures() {
+		SideColorFigureValidator[] validators = GetComponentsInChildren<SideColorFigureValidator>();
+		
+		for (int i = 0; i < validators.Length; i++)
+			validators[i].SwapShape();
 	}
 }

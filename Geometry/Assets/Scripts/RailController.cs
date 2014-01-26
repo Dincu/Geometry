@@ -25,7 +25,6 @@ public class RailController : MonoBehaviour {
             currentTime -= currentWait;
 
             float maxSegs = Mathf.Max(minSegs, maxWaitTime - (i * minSegs));
-            Debug.Log(maxSegs);
             currentWait = Random.Range(minSegs, maxSegs);
             i++;
 

@@ -28,16 +28,13 @@ public class PlayerScript : MonoBehaviour
 	{
 		if(Input.GetKeyDown(KeyCode.A))
 		{
-			Debug.Log("button A");
 			if (currentStance == playerPosition.RIGHT)
             {
-				Debug.Log("left to center");
                 currentStance = playerPosition.CENTER;
                 targetPosition = originPosition;
             }
             else if (currentStance == playerPosition.CENTER)
             {
-				Debug.Log("center to right");
                 currentStance = playerPosition.LEFT;
                 targetPosition = originPosition + new Vector3((float)playerPosition.LEFT, 0);
             }
@@ -45,7 +42,6 @@ public class PlayerScript : MonoBehaviour
 
 		if(Input.GetKeyDown(KeyCode.D))
 		{
-			Debug.Log("button B");
 			if (currentStance == playerPosition.LEFT) 
 			{
 				currentStance = playerPosition.CENTER;
