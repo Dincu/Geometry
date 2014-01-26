@@ -30,7 +30,7 @@ public class checkFigureCollition : MonoBehaviour {
 			//Do Damage
 //			lifeCounter();
 			Debug.Log("Damage");
-			figuretyp
+
 		}
 
 		Destroy(other.gameObject);
