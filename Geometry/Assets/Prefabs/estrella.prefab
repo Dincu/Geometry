@@ -12,6 +12,9 @@ GameObject:
   - 23: {fileID: 2300000}
   - 111: {fileID: 11100000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
+  - 54: {fileID: 5400000}
+  - 65: {fileID: 6500000}
   m_Layer: 0
   m_Name: estrella
   m_TagString: Untagged
@@ -58,6 +61,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Mesh: {fileID: 4300004, guid: 1479655c6c3009743860ae70b6b4662b, type: 3}
+--- !u!54 &5400000
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &6500000
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .470635444, y: .448487729, z: .130148962}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!111 &11100000
 Animation:
   m_ObjectHideFlags: 1
@@ -85,6 +115,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1509328c2c4302942b1265628900e305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0000d040f2848324bbef0e07906c9dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triColor: 0
+  figure: 2
+  materials:
+  - {fileID: 2100000, guid: 0472b33e8e705be4e9e86dcbb3d48c2c, type: 2}
+  - {fileID: 2100000, guid: 2675491b539953543937052066ea8d6a, type: 2}
+  - {fileID: 2100000, guid: 0bba1a7edecfdac4eaa394dc0cea8374, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

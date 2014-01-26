@@ -40,49 +40,50 @@ public class RailController : MonoBehaviour {
 
     void createNote(Transform origin)
     {
-
-
         GameObject clone = Instantiate(shapes[Random.Range(0, shapes.Length)]) as GameObject;
 
-		//clone.GetComponent<figureType>().triColor = (TriColor)Random.Range(0, 2);
+		clone.GetComponent<figureType>().triColor = (TriColor)Random.Range(0, 3);
 
 		Figure figure = clone.GetComponent<figureType>().figure;
 		TriColor triColor = clone.GetComponent<figureType>().triColor;
+
 		switch(figure) {
 			case Figure.Circle :
 				clone.animation.Play("SphereFall"); 
 				clone.animation["SphereRight"].layer = 1; 
 				clone.animation.Play("SphereRight"); 
 				clone.animation["SphereRight"].weight = 0.4f;
+			break;
 				
-				break;
 	
 			case Figure.Cube : 
 				clone.animation.Play("CubeFall");
 				clone.animation["CubeRotate"].layer = 1; 
 				clone.animation.Play("CubeRotate"); 
 				clone.animation["CubeRotate"].weight = 0.4f;
-				break;
+			break;
 
 			case Figure.Star : 
 				clone.animation.Play("StarFall");
 				clone.animation["star_rotation"].layer = 1; 
 				clone.animation.Play("star_rotation"); 
 				clone.animation["star_rotation"].weight = 0.4f;
-				break;
+			break;
+
 		}
 
 		//TODO Set Material
 		switch(triColor)
 		{
-			case TriColor.Red:
-			//clone.renderer.material.set
-				break;
-			case TriColor.Green:
-				break;
-
-			case TriColor.Blue:
-				break;
+		case TriColor.Red:
+			clone.renderer.material = clone.GetComponent<figureType>().materials[0];
+			break;
+		case TriColor.Green:
+			clone.renderer.material = clone.GetComponent<figureType>().materials[1];
+			break;				
+		case TriColor.Blue:
+			clone.renderer.material = clone.GetComponent<figureType>().materials[2];
+			break;					
 		}
 
         if (hasParent)

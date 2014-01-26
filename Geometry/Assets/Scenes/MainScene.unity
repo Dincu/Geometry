@@ -5218,6 +5218,18 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 2bdc34b7359ee604e9bb72f1ec679a7b, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 2bdc34b7359ee604e9bb72f1ec679a7b, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: 2bdc34b7359ee604e9bb72f1ec679a7b, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 10000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bdc34b7359ee604e9bb72f1ec679a7b, type: 2}
   m_RootGameObject: {fileID: 1558253533}
@@ -5781,7 +5793,7 @@ Transform:
   m_GameObject: {fileID: 1770426702}
   m_LocalRotation: {x: 0, y: 0, z: .866024852, w: -.500000954}
   m_LocalPosition: {x: .261533678, y: -.227590084, z: 0}
-  m_LocalScale: {x: 3.22455668, y: .267969012, z: 1}
+  m_LocalScale: {x: 3.22455668, y: .267969012, z: 10000}
   m_Children: []
   m_Father: {fileID: 1617091338}
 --- !u!114 &1770426704
@@ -5853,8 +5865,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f53b4ce5496b2240a4bdcdd6602dff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: 2
-  figure: 1
+  color: 0
+  figure: 0
 --- !u!1 &1774242086
 GameObject:
   m_ObjectHideFlags: 0
@@ -5883,7 +5895,7 @@ Transform:
   m_GameObject: {fileID: 1774242086}
   m_LocalRotation: {x: 0, y: 0, z: .866025984, w: .499998987}
   m_LocalPosition: {x: -1.43493986, y: -.319643497, z: 0}
-  m_LocalScale: {x: 3.22455549, y: .267969012, z: 1}
+  m_LocalScale: {x: 3.22455549, y: .267969012, z: 10000}
   m_Children: []
   m_Father: {fileID: 1617091338}
 --- !u!114 &1774242088
@@ -5955,8 +5967,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f53b4ce5496b2240a4bdcdd6602dff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: 1
-  figure: 2
+  color: 0
+  figure: 0
 --- !u!1 &1807980074
 GameObject:
   m_ObjectHideFlags: 0
@@ -6448,7 +6460,7 @@ Transform:
   m_GameObject: {fileID: 1893332016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.547074437, y: 1.20654798, z: 0}
-  m_LocalScale: {x: 3.26156259, y: .267968893, z: 1}
+  m_LocalScale: {x: 3.26156259, y: .267968893, z: 10000}
   m_Children: []
   m_Father: {fileID: 1617091338}
 --- !u!114 &1893332018

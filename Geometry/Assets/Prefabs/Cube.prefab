@@ -15,6 +15,7 @@ GameObject:
   - 111: {fileID: 11100000}
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -91,7 +92,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -123,6 +124,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1509328c2c4302942b1265628900e305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0000d040f2848324bbef0e07906c9dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triColor: 0
+  figure: 1
+  materials:
+  - {fileID: 2100000, guid: f10d6582e9e62f64f8884f254fe25bbf, type: 2}
+  - {fileID: 2100000, guid: 3c334c0a9c05a0a49b04c15f52c4b414, type: 2}
+  - {fileID: 2100000, guid: d7fbb53eac3e1674ba2ffde38dfdcb56, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

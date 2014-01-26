@@ -19,14 +19,14 @@ public class checkFigureCollition : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		Figure otherFigure = other.GetComponent<figureType>().figure;
 		TriColor otherColor = other.GetComponent<figureType>().triColor;
-
+		Debug.Log("Trigger");
 		if ((figure == otherFigure) && (color == otherColor)) {
-			//TODO Raise Score
-			Debug.Log("Raise Score");
+			//Add Score
+//			scoreCounter();
 		}
 		else {
-			//TODO Do damage
-			Debug.Log("Do Damage");
+			//Do Damage
+//			lifeCounter();
 		}
 
 		Destroy(other.gameObject);
