@@ -19,7 +19,7 @@ public class checkFigureCollition : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		Figure otherFigure = other.GetComponent<figureType>().figure;
 		TriColor otherColor = other.GetComponent<figureType>().triColor;
-
+		Debug.Log("Trigger");
 		if ((figure == otherFigure) && (color == otherColor)) {
 			//Add Score
 //			scoreCounter();
