@@ -19,9 +19,9 @@ public class PlayerScript : MonoBehaviour
 
     public enum playerPosition
     {
-		LEFT = -10,
+		LEFT = -2,
         CENTER = 0,
-        RIGHT = 10
+        RIGHT = 2
     }
 	
 	void Update()
