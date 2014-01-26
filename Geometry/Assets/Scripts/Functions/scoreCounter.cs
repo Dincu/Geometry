@@ -14,11 +14,15 @@ public class scoreCounter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.Q)){
-			// add 1 to the counter
-			sCounter += 1;
-			// print counter on the gui text
-			guiText.text = "" +sCounter;
-		}
+
+	}
+
+	public void addScore()
+	{
+		// add 1 to the counter
+		sCounter += 1;
+		// print counter on the gui text
+		guiText.text = "" +sCounter;
+		Debug.Log(sCounter);
 	}
 }

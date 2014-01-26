@@ -20,7 +20,7 @@ public class lifeCounter : MonoBehaviour {
 		// Update is called once per frame
 		void Update () {
 		Debug.Log (contador);
-			if (Input.GetKeyDown (KeyCode.E) && (contador == 0)) {
+		if (Input.GetKeyDown (KeyCode.E) && (contador == 0)) {
 						triangulo1.SetActive (false);
 						contador += 1;
 				} else if (Input.GetKeyDown (KeyCode.E) && (contador == 1)) {
@@ -39,5 +39,23 @@ public class lifeCounter : MonoBehaviour {
 						triangulo3.SetActive (true);
 						contador = 0;
 				}
+		}
+
+		public void minusLife() {
+
+			switch (contador) {
+			case 0: 
+					triangulo1.SetActive (false);
+					break;
+			case 1: 
+					triangulo2.SetActive (false);
+					break;
+			case 2:
+					triangulo3.SetActive (false);
+					gameOver.SetActive (true);
+					retry.SetActive (true);
+					break;
+			}
+			contador += 1;
 		}
 }

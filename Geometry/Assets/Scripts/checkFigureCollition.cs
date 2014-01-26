@@ -5,6 +5,8 @@ public class checkFigureCollition : MonoBehaviour {
 
 	public TriColor color;
 	public Figure figure;
+	public scoreCounter Whatever, Whatever2;
+	public lifeCounter lifeManager;
 
 	// Use this for initialization
 	void Start () {
@@ -22,13 +24,15 @@ public class checkFigureCollition : MonoBehaviour {
 
 		if ((figure == otherFigure) && (color == otherColor)) {
 			//Add Score
-//			scoreCounter();
+
+			Whatever.addScore();
+			Whatever2.addScore();
 			Debug.Log("Score");
 			ValidatorsController.Instance.swapFigures();
 		}
 		else {
 			//Do Damage
-//			lifeCounter();
+			lifeManager.minusLife();
 			Debug.Log("Damage");
 
 		}
