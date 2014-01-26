@@ -42,11 +42,29 @@ public class RailController : MonoBehaviour {
     {
         GameObject clone = Instantiate(shapes[Random.Range(0, shapes.Length)]) as GameObject;
 
+	
+		if (clone.name == "Sphere(Clone)" )
+		{
+			clone.animation.Play("SphereFall"); 
+			clone.animation["SphereRight"].layer = 1; 
+			clone.animation.Play("SphereRight"); 
+			clone.animation["SphereRight"].weight = 0.4f;
+		}
+		else if (clone.name == "Cube(Clone)")
+		{
+			clone.animation.Play("CubeFall");
+			clone.animation["CubeRotate"].layer = 1; 
+			clone.animation.Play("CubeRotate"); 
+			clone.animation["CubeRotate"].weight = 0.4f;
+		}
+		else 
+		{
+			clone.animation.Play("StarFall");
+			clone.animation["star_rotation"].layer = 1; 
+			clone.animation.Play("star_rotation"); 
+			clone.animation["star_rotation"].weight = 0.4f;
 
-		clone.animation.Play("Falling"); 
-		clone.animation["SphereRight"].layer = 1; 
-		clone.animation.Play("SphereRight"); 
-		clone.animation["SphereRight"].weight = 0.4f;
+		}
 
         if (hasParent)
         {

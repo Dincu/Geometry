@@ -9,12 +9,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 33: {fileID: 3300000}
-  - 135: {fileID: 13500000}
   - 23: {fileID: 2300000}
   - 111: {fileID: 11100000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: estrella
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,9 +25,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 9.51062611e-06, y: -9.50981848e-06, z: -.707106829, w: .707106829}
-  m_LocalPosition: {x: 0, y: -.78122288, z: 1.24449241}
-  m_LocalScale: {x: .171771213, y: .171771213, z: .171771243}
+  m_LocalRotation: {x: .0031313987, y: -.00313143129, z: -.707099974, w: -.707099795}
+  m_LocalPosition: {x: -1.05676126, y: .754482269, z: 4.71312666}
+  m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!23 &2300000
@@ -43,7 +42,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 9cebc2703df1d95498095688befcec89, type: 2}
+  - {fileID: 2100000, guid: 2e2d4028aa7cd314b99c5f8456556d94, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -58,7 +57,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300004, guid: 1479655c6c3009743860ae70b6b4662b, type: 3}
 --- !u!111 &11100000
 Animation:
   m_ObjectHideFlags: 1
@@ -67,10 +66,10 @@ Animation:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
+  m_Animation: {fileID: 7400000, guid: 15fdaf9b2966f4342bae6a0da8e67535, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 45bc5217dee82bc4b89bda14188efbd9, type: 2}
-  - {fileID: 7400000, guid: 2866ffdf437c0114d998a766e9f976c4, type: 2}
+  - {fileID: 7400000, guid: 15fdaf9b2966f4342bae6a0da8e67535, type: 2}
+  - {fileID: 7400000, guid: d73001ca847f4504793fa302ecd39945, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -86,18 +85,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1509328c2c4302942b1265628900e305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &13500000
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: .5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
