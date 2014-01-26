@@ -1,29 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public enum triColor
+public enum TriColor
 {
 	Red,
 	Green,
 	Blue
 }
 
-public enum figure
+public enum Figure
 {
 	Circle,
 	Cube,
 	Star
 }
 
-public class fallingFigure : MonoBehaviour {
+public class figureType : MonoBehaviour {
+
+	public TriColor triColor;
+	public Figure figure;
+	public Material[] materials = new Material[3];
 
 	// Use this for initialization
 	void Start () {
-	
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 }

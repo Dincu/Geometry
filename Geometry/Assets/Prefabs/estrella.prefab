@@ -99,6 +99,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triColor: 0
   figure: 2
+  materials:
+  - {fileID: 2100000, guid: 0472b33e8e705be4e9e86dcbb3d48c2c, type: 2}
+  - {fileID: 2100000, guid: 2675491b539953543937052066ea8d6a, type: 2}
+  - {fileID: 2100000, guid: 0bba1a7edecfdac4eaa394dc0cea8374, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
