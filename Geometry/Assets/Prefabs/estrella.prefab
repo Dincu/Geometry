@@ -9,14 +9,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 33: {fileID: 3300000}
-  - 65: {fileID: 6500000}
   - 23: {fileID: 2300000}
-  - 45: {fileID: 4500000}
   - 111: {fileID: 11100000}
-  - 54: {fileID: 5400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: estrella
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,9 +25,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: -.124198809, y: .227086738, z: -.158779785, w: .952782989}
-  m_LocalPosition: {x: 1.6057961, y: -.580938816, z: 1.20623434}
-  m_LocalScale: {x: .5, y: .5, z: .5}
+  m_LocalRotation: {x: .0031313987, y: -.00313143129, z: -.707099974, w: -.707099795}
+  m_LocalPosition: {x: -1.05676126, y: .754482269, z: 4.71312666}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!23 &2300000
@@ -41,11 +38,11 @@ Renderer:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 0
+  m_ReceiveShadows: 1
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 9c745bc4abf65cd4da0aa39b74bb043b, type: 2}
+  - {fileID: 2100000, guid: 2e2d4028aa7cd314b99c5f8456556d94, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -60,42 +57,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!45 &4500000
-Skybox:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_CustomSkybox: {fileID: 0}
---- !u!54 &5400000
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &6500000
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Mesh: {fileID: 4300004, guid: 1479655c6c3009743860ae70b6b4662b, type: 3}
 --- !u!111 &11100000
 Animation:
   m_ObjectHideFlags: 1
@@ -104,10 +66,10 @@ Animation:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: ab073e9b6872c754bbae7e489b7e0a9e, type: 2}
+  m_Animation: {fileID: 7400000, guid: 15fdaf9b2966f4342bae6a0da8e67535, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: ab073e9b6872c754bbae7e489b7e0a9e, type: 2}
-  - {fileID: 7400000, guid: afd3e81acd888154290aac5bebf92311, type: 2}
+  - {fileID: 7400000, guid: 15fdaf9b2966f4342bae6a0da8e67535, type: 2}
+  - {fileID: 7400000, guid: d73001ca847f4504793fa302ecd39945, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
