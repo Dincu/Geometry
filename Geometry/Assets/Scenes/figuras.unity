@@ -5010,7 +5010,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1467795272}
   - 212: {fileID: 1467795273}
-  - 111: {fileID: 1467795274}
+  - 114: {fileID: 1467795274}
+  - 65: {fileID: 1467795275}
   m_Layer: 0
   m_Name: Icono Cuadrado
   m_TagString: Untagged
@@ -5052,21 +5053,33 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 95537d046b669e549b51d311ef9b6186, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!111 &1467795274
-Animation:
+--- !u!114 &1467795274
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1467795271}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations:
-  - {fileID: 7400000, guid: be0118febfe9d0e4c8260247653db710, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 685c948dc5dede7489a0035cc3c63233, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onMouseEnterSprite: {fileID: 21300000, guid: b459e328a1f6a6649931effbb218cbe3, type: 3}
+  onMouseExitSprite: {fileID: 21300000, guid: 95537d046b669e549b51d311ef9b6186, type: 3}
+  onMouseDownSprite: {fileID: 0}
+  onMouseDragSprite: {fileID: 0}
+--- !u!65 &1467795275
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1467795271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.66999996, y: 1.66999996, z: .200000003}
+  m_Center: {x: 1.1920929e-07, y: 0, z: -2.38418579e-07}
 --- !u!1 &1499446023
 GameObject:
   m_ObjectHideFlags: 0
