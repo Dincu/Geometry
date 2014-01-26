@@ -59,7 +59,6 @@ public class PlayerScript : MonoBehaviour
 
 		}
 
-		Debug.Log("movement");
         Vector3 tempPosition = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * damping);
 		transform.position = new Vector3(tempPosition.x, originPosition.y, originPosition.z);
 	}
