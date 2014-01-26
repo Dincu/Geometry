@@ -14,6 +14,7 @@ GameObject:
   - 111: {fileID: 11100000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
+  - 54: {fileID: 5400000}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -60,6 +61,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &5400000
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!111 &11100000
 Animation:
   m_ObjectHideFlags: 1
@@ -95,11 +111,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7082647972a596440b9f906e2ba2f7d9, type: 3}
+  m_Script: {fileID: 11500000, guid: 0000d040f2848324bbef0e07906c9dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triColor: 0
   figure: 0
+  materials:
+  - {fileID: 2100000, guid: 3fcce5b04229c314d99d33b3a44ea6da, type: 2}
+  - {fileID: 2100000, guid: 3e06a34421c5f3748aca1a9950a37304, type: 2}
+  - {fileID: 2100000, guid: 6d729aa521ff04f459702787118afe95, type: 2}
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1
