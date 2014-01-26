@@ -27,7 +27,7 @@ public class PlayerScript : MonoBehaviour
     public float offsetAccelerationx = 0.45f;
     public float waitTime = 0.05f;
     private float currentWaitTime = 0.1f;
-	
+
 	void Update()
 	{
 #if UNITY_ANDROID
@@ -49,9 +49,8 @@ public class PlayerScript : MonoBehaviour
                 targetPosition = originPosition + new Vector3((float)playerPosition.LEFT, 0);
             }
         }
-        else if(Input.acceleration.x < offsetAccelerationx/2 && Input.acceleration.x > -offsetAccelerationx/2)
+        else if (Input.acceleration.x < offsetAccelerationx / 2 && Input.acceleration.x > -offsetAccelerationx / 2)
         {
-            Debug.Log("to center");
             currentStance = playerPosition.CENTER;
             targetPosition = originPosition;
             currentWaitTime = 0;
@@ -59,7 +58,6 @@ public class PlayerScript : MonoBehaviour
 #else
 		if(Input.GetKeyDown(KeyCode.A))
 		{
-			Debug.Log("button A");
 			if (currentStance == playerPosition.RIGHT)
             {
 				Debug.Log("left to center");
@@ -68,14 +66,12 @@ public class PlayerScript : MonoBehaviour
             }
             else if (currentStance == playerPosition.CENTER)
             {
-				Debug.Log("center to right");
                 currentStance = playerPosition.LEFT;
                 targetPosition = originPosition + new Vector3((float)playerPosition.LEFT, 0);
             }
 		}
         if (Input.GetKeyDown(KeyCode.D))
         {
-            Debug.Log("button B");
             if (currentStance == playerPosition.LEFT)
             {
                 currentStance = playerPosition.CENTER;
@@ -102,6 +98,4 @@ public class PlayerScript : MonoBehaviour
 	{
 
 	}
-
-
 }
