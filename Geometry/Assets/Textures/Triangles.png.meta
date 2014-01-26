@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 426cd82039b2cd04083adb00f30ef357
-=======
-guid: abbced2a5dddc064e9f21556e7f1cbb5
->>>>>>> 2190820a6d472888b62889b82f2ed139ada93ed3
+guid: b8f09f2ad4d02ec45b2bb5a3e7515aae
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -24,17 +20,17 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,6 +44,33 @@ TextureImporter:
     textureFormat: -2
     compressionQuality: 50
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: blue_life_triangle
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 375
+        width: 466
+        height: 217
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: red_life_tringle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 342
+        height: 366
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: green_life_triangle
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 18
+        width: 237
+        height: 469
+      alignment: 0
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 
