@@ -29,6 +29,7 @@ public class lifeCounter : MonoBehaviour {
 				} else if (Input.GetKeyDown (KeyCode.E) && (contador == 2)) {
 						triangulo3.SetActive (false);
 						contador += 1;
+						Time.timeScale = 0;
 						gameOver.SetActive (true);
 						retry.SetActive (true);
 				} else if (Input.GetKeyDown (KeyCode.E) && (contador == 3)) {

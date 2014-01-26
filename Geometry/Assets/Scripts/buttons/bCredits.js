@@ -11,5 +11,5 @@ function Update () {
 }
 
 function OnMouseDown() {
-	credits.renderer.enabled = true;
+	credits.SetActive(true);
 }

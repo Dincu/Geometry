@@ -1611,8 +1611,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: 2
   figure: 1
-  Whatever: {fileID: 1014332791}
-  Whatever2: {fileID: 91899129}
+  Whatever: {fileID: 1934630391}
+  Whatever2: {fileID: 1714296783}
   lifeManager: {fileID: 2022647357}
 --- !u!114 &342516858
 MonoBehaviour:
@@ -2025,6 +2025,8 @@ MonoBehaviour:
   step: 30
   currentStance: 0
   damping: 1
+  offsetAccelerationx: .449999988
+  waitTime: .0500000007
 --- !u!114 &418583537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2127,7 +2129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d807ee865faf14c81acd9c7cc11e91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  retryOn: {fileID: 0}
+  retryOn: {fileID: 21300000, guid: 245bd4844135f5c4995345650be271de, type: 3}
 --- !u!1 &441167530
 GameObject:
   m_ObjectHideFlags: 0
@@ -3171,28 +3173,36 @@ Prefab:
     - target: {fileID: 11400012, guid: 2bdc34b7359ee604e9bb72f1ec679a7b, type: 2}
       propertyPath: Whatever
       value: 
-      objectReference: {fileID: 1014332791}
+      objectReference: {fileID: 1934630391}
     - target: {fileID: 11400016, guid: 2bdc34b7359ee604e9bb72f1ec679a7b, type: 2}
       propertyPath: Whatever
       value: 
-      objectReference: {fileID: 1014332791}
+      objectReference: {fileID: 1934630391}
     - target: {fileID: 11400020, guid: 2bdc34b7359ee604e9bb72f1ec679a7b, type: 2}
       propertyPath: Whatever
       value: 
-      objectReference: {fileID: 1014332791}
+      objectReference: {fileID: 1934630391}
     - target: {fileID: 11400012, guid: 2bdc34b7359ee604e9bb72f1ec679a7b, type: 2}
       propertyPath: Whatever2
       value: 
-      objectReference: {fileID: 91899129}
+      objectReference: {fileID: 1714296783}
     - target: {fileID: 11400016, guid: 2bdc34b7359ee604e9bb72f1ec679a7b, type: 2}
       propertyPath: Whatever2
       value: 
-      objectReference: {fileID: 91899129}
+      objectReference: {fileID: 1714296783}
     - target: {fileID: 11400020, guid: 2bdc34b7359ee604e9bb72f1ec679a7b, type: 2}
       propertyPath: Whatever2
       value: 
-      objectReference: {fileID: 91899129}
+      objectReference: {fileID: 1714296783}
     - target: {fileID: 11400012, guid: 2bdc34b7359ee604e9bb72f1ec679a7b, type: 2}
+      propertyPath: lifeManager
+      value: 
+      objectReference: {fileID: 2022647357}
+    - target: {fileID: 11400020, guid: 2bdc34b7359ee604e9bb72f1ec679a7b, type: 2}
+      propertyPath: lifeManager
+      value: 
+      objectReference: {fileID: 2022647357}
+    - target: {fileID: 11400016, guid: 2bdc34b7359ee604e9bb72f1ec679a7b, type: 2}
       propertyPath: lifeManager
       value: 
       objectReference: {fileID: 2022647357}
@@ -4911,9 +4921,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: 0
   figure: 0
-  Whatever: {fileID: 1014332791}
-  Whatever2: {fileID: 91899129}
-  lifeManager: {fileID: 0}
+  Whatever: {fileID: 1934630391}
+  Whatever2: {fileID: 1714296783}
+  lifeManager: {fileID: 2022647357}
 --- !u!114 &1324730929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5681,6 +5691,8 @@ MonoBehaviour:
   step: 30
   currentStance: 0
   damping: 51
+  offsetAccelerationx: .449999988
+  waitTime: .0500000007
 --- !u!50 &1432440076
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -7009,9 +7021,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   color: 1
   figure: 2
-  Whatever: {fileID: 1014332791}
-  Whatever2: {fileID: 91899129}
-  lifeManager: {fileID: 0}
+  Whatever: {fileID: 1934630391}
+  Whatever2: {fileID: 1714296783}
+  lifeManager: {fileID: 2022647357}
 --- !u!114 &1917537118
 MonoBehaviour:
   m_ObjectHideFlags: 0
