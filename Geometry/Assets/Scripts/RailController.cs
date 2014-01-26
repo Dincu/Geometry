@@ -43,7 +43,9 @@ public class RailController : MonoBehaviour {
 
 
         GameObject clone = Instantiate(shapes[Random.Range(0, shapes.Length)]) as GameObject;
-		clone.GetComponent<figureType>().triColor = (TriColor)Random.Range(0, 2);
+
+		//clone.GetComponent<figureType>().triColor = (TriColor)Random.Range(0, 2);
+
 		Figure figure = clone.GetComponent<figureType>().figure;
 		TriColor triColor = clone.GetComponent<figureType>().triColor;
 		switch(figure) {
@@ -70,6 +72,7 @@ public class RailController : MonoBehaviour {
 				break;
 		}
 
+		//TODO Set Material
 		switch(triColor)
 		{
 			case TriColor.Red:
