@@ -1,5 +1,7 @@
 ﻿#pragma strict
 
+var credits : GameObject;
+
 function Start () {
 
 }
@@ -9,5 +11,5 @@ function Update () {
 }
 
 function OnMouseDown() {
-	//mostrar creditos
+	credits.renderer.enabled = true;
 }
