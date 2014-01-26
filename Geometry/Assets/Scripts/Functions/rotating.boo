@@ -9,5 +9,5 @@ public class rotating (MonoBehaviour):
 		if Input.GetKeyDown(KeyCode.S):
 			transform.Rotate(Vector3.fwd, 120)
 
-		if(Input.GetMouseButtonDown(0))
+		if Input.GetMouseButtonDown(0):
 			transform.Rotate(Vector3.fwd, 120)
