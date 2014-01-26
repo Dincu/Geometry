@@ -18,7 +18,7 @@ public class scoreCounter : MonoBehaviour {
 			// add 1 to the counter
 			sCounter += 1;
 			// print counter on the gui text
-			guiText.text = "Score: " +sCounter;
+			guiText.text = "" +sCounter;
 		}
 	}
 }
