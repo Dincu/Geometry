@@ -21,12 +21,12 @@ public class checkFigureCollition : MonoBehaviour {
 		TriColor otherColor = other.GetComponent<figureType>().triColor;
 
 		if ((figure == otherFigure) && (color == otherColor)) {
-			//TODO Raise Score
-			Debug.Log("Raise Score");
+			//Add Score
+//			scoreCounter();
 		}
 		else {
-			//TODO Do damage
-			Debug.Log("Do Damage");
+			//Do Damage
+//			lifeCounter();
 		}
 
 		Destroy(other.gameObject);
