@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 9.51062611e-06, y: -9.50981848e-06, z: -.707106829, w: .707106829}
   m_LocalPosition: {x: 0, y: -.78122288, z: 1.24449241}
-  m_LocalScale: {x: .171771213, y: .171771213, z: .171771243}
+  m_LocalScale: {x: 1.29999995, y: 1.29999995, z: 1.29999995}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!23 &2300000
@@ -74,7 +74,7 @@ Animation:
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
-  m_CullingType: 1
+  m_CullingType: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
