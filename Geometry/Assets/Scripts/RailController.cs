@@ -40,30 +40,46 @@ public class RailController : MonoBehaviour {
 
     void createNote(Transform origin)
     {
+
+
         GameObject clone = Instantiate(shapes[Random.Range(0, shapes.Length)]) as GameObject;
-
+		clone.GetComponent<figureType>().triColor = (TriColor)Random.Range(0, 2);
+		Figure figure = clone.GetComponent<figureType>().figure;
+		TriColor triColor = clone.GetComponent<figureType>().triColor;
+		switch(figure) {
+			case Figure.Circle :
+				clone.animation.Play("SphereFall"); 
+				clone.animation["SphereRight"].layer = 1; 
+				clone.animation.Play("SphereRight"); 
+				clone.animation["SphereRight"].weight = 0.4f;
+				
+				break;
 	
-		if (clone.name == "Sphere(Clone)" )
-		{
-			clone.animation.Play("SphereFall"); 
-			clone.animation["SphereRight"].layer = 1; 
-			clone.animation.Play("SphereRight"); 
-			clone.animation["SphereRight"].weight = 0.4f;
-		}
-		else if (clone.name == "Cube(Clone)")
-		{
-			clone.animation.Play("CubeFall");
-			clone.animation["CubeRotate"].layer = 1; 
-			clone.animation.Play("CubeRotate"); 
-			clone.animation["CubeRotate"].weight = 0.4f;
-		}
-		else 
-		{
-			clone.animation.Play("StarFall");
-			clone.animation["star_rotation"].layer = 1; 
-			clone.animation.Play("star_rotation"); 
-			clone.animation["star_rotation"].weight = 0.4f;
+			case Figure.Cube : 
+				clone.animation.Play("CubeFall");
+				clone.animation["CubeRotate"].layer = 1; 
+				clone.animation.Play("CubeRotate"); 
+				clone.animation["CubeRotate"].weight = 0.4f;
+				break;
 
+			case Figure.Star : 
+				clone.animation.Play("StarFall");
+				clone.animation["star_rotation"].layer = 1; 
+				clone.animation.Play("star_rotation"); 
+				clone.animation["star_rotation"].weight = 0.4f;
+				break;
+		}
+
+		switch(triColor)
+		{
+			case TriColor.Red:
+			//clone.renderer.material.set
+				break;
+			case TriColor.Green:
+				break;
+
+			case TriColor.Blue:
+				break;
 		}
 
         if (hasParent)

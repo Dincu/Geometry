@@ -5765,6 +5765,7 @@ GameObject:
   - 65: {fileID: 1770426706}
   - 23: {fileID: 1770426705}
   - 114: {fileID: 1770426704}
+  - 114: {fileID: 1770426708}
   m_Layer: 0
   m_Name: Blue
   m_TagString: Untagged
@@ -5841,6 +5842,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1546211803}
   m_GameObject: {fileID: 1770426702}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1770426708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1770426702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f53b4ce5496b2240a4bdcdd6602dff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 2
+  figure: 1
 --- !u!1 &1774242086
 GameObject:
   m_ObjectHideFlags: 0
@@ -5853,6 +5867,7 @@ GameObject:
   - 65: {fileID: 1774242090}
   - 23: {fileID: 1774242089}
   - 114: {fileID: 1774242088}
+  - 114: {fileID: 1774242092}
   m_Layer: 0
   m_Name: Green
   m_TagString: Untagged
@@ -5929,6 +5944,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1546211803}
   m_GameObject: {fileID: 1774242086}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1774242092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1774242086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f53b4ce5496b2240a4bdcdd6602dff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 1
+  figure: 2
 --- !u!1 &1807980074
 GameObject:
   m_ObjectHideFlags: 0
@@ -6404,6 +6432,7 @@ GameObject:
   - 65: {fileID: 1893332020}
   - 23: {fileID: 1893332019}
   - 114: {fileID: 1893332018}
+  - 114: {fileID: 1893332022}
   m_Layer: 0
   m_Name: Red
   m_TagString: Untagged
@@ -6480,6 +6509,19 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1546211803}
   m_GameObject: {fileID: 1893332016}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1893332022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1893332016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f53b4ce5496b2240a4bdcdd6602dff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  figure: 0
 --- !u!1 &1947811208
 GameObject:
   m_ObjectHideFlags: 0
