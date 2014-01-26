@@ -10,5 +10,5 @@ function Update () {
 
 function OnMouseDown() {
 	//Cambio de escena
-	Application.LoadLevel('MainScene');
+	Application.LoadLevel('MainScene(1)');
 }
