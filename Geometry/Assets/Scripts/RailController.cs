@@ -40,16 +40,17 @@ public class RailController : MonoBehaviour {
 
     void createNote(Transform origin)
     {
-
-
         GameObject clone = Instantiate(shapes[Random.Range(0, shapes.Length)]) as GameObject;
 
 		//clone.GetComponent<figureType>().triColor = (TriColor)Random.Range(0, 2);
-
+		//Debug.Log("!!!"+clone.name);
 		Figure figure = clone.GetComponent<figureType>().figure;
+
+		Debug.Log("!!!"+figure.ToString());
 		TriColor triColor = clone.GetComponent<figureType>().triColor;
 		switch(figure) {
 			case Figure.Circle :
+			    Debug.Log("!!! Circulo");
 				clone.animation.Play("SphereFall"); 
 				clone.animation["SphereRight"].layer = 1; 
 				clone.animation.Play("SphereRight"); 
@@ -58,6 +59,7 @@ public class RailController : MonoBehaviour {
 				break;
 	
 			case Figure.Cube : 
+			Debug.Log("!!! cubo");
 				clone.animation.Play("CubeFall");
 				clone.animation["CubeRotate"].layer = 1; 
 				clone.animation.Play("CubeRotate"); 
@@ -65,6 +67,7 @@ public class RailController : MonoBehaviour {
 				break;
 
 			case Figure.Star : 
+			Debug.Log("!!! estrella");
 				clone.animation.Play("StarFall");
 				clone.animation["star_rotation"].layer = 1; 
 				clone.animation.Play("star_rotation"); 
@@ -76,7 +79,7 @@ public class RailController : MonoBehaviour {
 		switch(triColor)
 		{
 			case TriColor.Red:
-			//clone.renderer.material.set
+	//		    clone.renderer.material
 				break;
 			case TriColor.Green:
 				break;
